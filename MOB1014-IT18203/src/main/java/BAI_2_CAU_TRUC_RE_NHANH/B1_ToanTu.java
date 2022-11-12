@@ -21,7 +21,7 @@ public class B1_ToanTu {
                 => kiểu dữ liệu
         */
         int a= 7, b=2;
-        int c= a++ -(b--)-(a--);
+        int c= ++a -(--b)-(--a);
         System.out.println(c);
         
         String test = 5 > 6 ? "dung": "sai";
