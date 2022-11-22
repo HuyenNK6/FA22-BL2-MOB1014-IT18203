@@ -18,7 +18,7 @@ public class SinhVien {
     private String hoTen;
     private int namSinh;
     private double diem;
-    //2. CONSTRUCTOR
+    //2. CONSTRUCTOR: HÀM TẠO
     /*
         Cách gõ:
         - C1: (ctrl + cách + enter) x2 lần
