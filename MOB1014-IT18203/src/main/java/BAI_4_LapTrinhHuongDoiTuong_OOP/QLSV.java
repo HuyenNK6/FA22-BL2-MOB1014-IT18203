@@ -41,9 +41,9 @@ public class QLSV {
         lstSV.add(svPoly);
         lstSV.add(sv);
         //nhập số lượng SV cần thêm vào
-//        System.out.println("Nhap so luong SV n= ");
-//        int n = Integer.parseInt(sc.nextLine());
-//        for (int i = 0; i < n; i++) {
+        System.out.println("Nhap so luong SV n= ");
+        int n = Integer.parseInt(sc.nextLine());
+        for (int i = 0; i < n; i++) {
             SinhVien svien = new SinhVien();
             System.out.println("Nhap msv: ");//nhập mã sv
             String msv = sc.nextLine();
@@ -62,7 +62,7 @@ public class QLSV {
             svien.setDiem(diem);
             
             lstSV.add(svien);
-        //}
+        }
         //3. Duyệt toàn bộ phần tử trong danh sách SV
         //fore+ tab
         for (SinhVien sinhVien : lstSV) {
