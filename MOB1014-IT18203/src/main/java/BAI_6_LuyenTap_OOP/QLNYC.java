@@ -5,6 +5,8 @@
 package BAI_6_LuyenTap_OOP;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -180,6 +182,39 @@ public class QLNYC {
     }
 
     public void sapXep() {
-
+        //Collections.sort(_lstNYC); => ko dùng dc
+       
+       Collections.sort(_lstNYC, new Comparator<NguoiYeuCu>() {
+           @Override
+           public int compare(NguoiYeuCu o1, NguoiYeuCu o2) {
+                //sắp xếp tăng dần theo họ tên
+              //return o1.getHoTen().compareTo(o2.getHoTen());
+              //return o1.getVong1().compareTo(o2.getVong1()); => ko dùng dc
+               //sắp xếp tăng dần theo số đo vòng 1
+            return -Double.compare(o1.getVong1(), o2.getVong1());
+           }
+       });
+       xuatDanhSachNYC();
     }
 }
+/*
+Bài tập
+    1. BillChilling 
+            - id: int
+            - gia: double
+            - vi: String
+            - noiSX: String
+        => Constructor ko tham số và có tham số
+        => Getter & Setter
+        => toString() và inThongTin()
+    2. QLBC
+        - 1. nhapDS()
+        - 2. xuatDS()
+        - 3. timBC()
+        - 4. xoaBC()
+        - 5. suaBC()
+        - 6. sapXepBC()
+    3. Main 
+        => gọi đến các chức năng trong QLBC
+        => menu lặp
+*/

@@ -19,6 +19,8 @@ public class Main {
         qlnyc.xoaNYC();
         qlnyc.suaNYC();
         qlnyc.xuatDanhSachNYC();
+        qlnyc.sapXep();
+        
 
     }
 }
