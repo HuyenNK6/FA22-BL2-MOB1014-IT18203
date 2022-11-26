@@ -17,5 +17,8 @@ public class Main {
         qlnyc.xuatDanhSachNYC();
         qlnyc.timKiem();
         qlnyc.xoaNYC();
+        qlnyc.suaNYC();
+        qlnyc.xuatDanhSachNYC();
+
     }
 }
