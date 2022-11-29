@@ -162,7 +162,7 @@ public class QLNYC {
                         _lstNYC.get(i).setVong1(vong1);
                         break;
                     case 3:
-                         System.out.println("Nhap so do vong 2= ");
+                        System.out.println("Nhap so do vong 2= ");
                         double vong2 = Double.parseDouble(_sc.nextLine());
                         _lstNYC.get(i).setVong2(vong2);
                         break;
@@ -183,18 +183,21 @@ public class QLNYC {
 
     public void sapXep() {
         //Collections.sort(_lstNYC); => ko dùng dc
-       
-       Collections.sort(_lstNYC, new Comparator<NguoiYeuCu>() {
-           @Override
-           public int compare(NguoiYeuCu o1, NguoiYeuCu o2) {
+
+        Collections.sort(_lstNYC, new Comparator<NguoiYeuCu>() {
+            @Override
+            public int compare(NguoiYeuCu o1, NguoiYeuCu o2) {
                 //sắp xếp tăng dần theo họ tên
-              //return o1.getHoTen().compareTo(o2.getHoTen());
-              //return o1.getVong1().compareTo(o2.getVong1()); => ko dùng dc
-               //sắp xếp tăng dần theo số đo vòng 1
-            return -Double.compare(o1.getVong1(), o2.getVong1());
-           }
-       });
-       xuatDanhSachNYC();
+                //return o1.getHoTen().compareTo(o2.getHoTen());
+                //return o1.getVong1().compareTo(o2.getVong1()); => ko dùng dc
+                //sắp xếp tăng dần theo số đo vòng 1
+                //Cách 1:
+                //return -Double.compare(o1.getVong1(), o2.getVong1());
+                //Cách 2:
+                return o1.getVong1() > o2.getVong1() ? 1 : -1;
+            }
+        });
+        xuatDanhSachNYC();
     }
 }
 /*
@@ -217,4 +220,4 @@ Bài tập
     3. Main 
         => gọi đến các chức năng trong QLBC
         => menu lặp
-*/
+ */
