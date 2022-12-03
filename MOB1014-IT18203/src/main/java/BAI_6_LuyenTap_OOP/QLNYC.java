@@ -61,7 +61,8 @@ public class QLNYC {
         //for each
         //fore+ tab
         for (NguoiYeuCu nguoiYeuCu : _lstNYC) {
-            System.out.println(nguoiYeuCu.toString());
+            //System.out.println(nguoiYeuCu.toString());
+            nguoiYeuCu.inThongTin();
         }
     }
 

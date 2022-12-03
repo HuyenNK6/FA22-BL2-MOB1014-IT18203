@@ -36,7 +36,7 @@ public class QLBC {
         do {            
             //1. Khoi tao
             _bingChilling= new BingChilling();
-            //2. nhap thong tin
+            //2. nhap thong tin => _bingChilling.nhapThongTin()
             System.out.println("Nhap id= ");
             int id= Integer.parseInt(_sc.nextLine());
             _bingChilling.setId(id);

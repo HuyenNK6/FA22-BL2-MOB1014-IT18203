@@ -71,5 +71,6 @@ public class BingChilling {
         return "BingChilling{" + "id=" + id + ", gia=" + gia + ", vi=" + vi + ", noiSX=" + noiSX + '}';
     }
     
-    
+    //inThongTin()
+    //nhapThongTin()
 }

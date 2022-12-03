@@ -15,7 +15,8 @@ public class NguoiYeuCu {
     private double vong1;
     private double vong2;
     private double vong3;
-    //2. Constructor
+    //2. Constructor- hàm tạo
+    //(ctrl + cách+ enter) x2
     // Constructor ko tham số
 
     public NguoiYeuCu() {
@@ -29,7 +30,7 @@ public class NguoiYeuCu {
         this.vong3 = vong3;
     }
     // 3. Getter and Setter
-
+//click chuột phải => insert code => getter & setter
     public String getMaNY() {
         return maNY;
     }
@@ -69,7 +70,7 @@ public class NguoiYeuCu {
     public void setVong3(double vong3) {
         this.vong3 = vong3;
     }
-    //4. toString()
+    ////click chuột phải => insert code => toString()
 
     @Override
     public String toString() {
@@ -87,6 +88,6 @@ public class NguoiYeuCu {
         System.out.println("------------------");
         
     }
-
+//nhapThongTin()
     
 }
